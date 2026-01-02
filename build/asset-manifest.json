@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.c5c98b5f.css",
+    "main.js": "/portfolio/static/js/main.fc585a1d.js",
+    "static/js/453.515ecba2.chunk.js": "/portfolio/static/js/453.515ecba2.chunk.js",
+    "static/media/image-of-quantum-computing.jpg": "/portfolio/static/media/image-of-quantum-computing.d7d4c736e8ad9fede597.jpg",
+    "static/media/Chaturanga_Chess_Set.jpg": "/portfolio/static/media/Chaturanga_Chess_Set.41b7ccff8778d3989454.jpg",
+    "static/media/airfoil.png": "/portfolio/static/media/airfoil.d20ee74df59999c0fae9.png",
+    "static/media/orange_image_of_me.jpg": "/portfolio/static/media/orange_image_of_me.06662d020068bfaab43b.jpg",
+    "static/media/ZFE-logo.png": "/portfolio/static/media/ZFE-logo.ad831624c3f5f08f29a9.png",
+    "static/media/Go_game.jpg": "/portfolio/static/media/Go_game.3270f3c5926b0e5789f8.jpg",
+    "static/media/ptwop.png": "/portfolio/static/media/ptwop.54c9d7604aa4867be78b.png",
+    "static/media/landscape_comp.jpeg": "/portfolio/static/media/landscape_comp.5861f0f4276bbc94e06e.jpeg",
+    "static/media/cnrs.png": "/portfolio/static/media/cnrs.6ef1dc0286a42ce76a56.png",
+    "static/media/game_of_the_amazones.jpeg": "/portfolio/static/media/game_of_the_amazones.713d5cb7d814c3da3854.jpeg",
+    "static/media/cpge_moulay_youssef_cover.jpeg": "/portfolio/static/media/cpge_moulay_youssef_cover.419a1c069816f7d66037.jpeg",
+    "static/media/athena.jpg": "/portfolio/static/media/athena.59d848a808252190b3f3.jpg",
+    "static/media/orange.jpeg": "/portfolio/static/media/orange.d589ccb8512105d55054.jpeg",
+    "static/media/gitlab_logo.png": "/portfolio/static/media/gitlab_logo.9cdb0990071fc89e943f.png",
+    "static/media/visuel_batiment.jpg": "/portfolio/static/media/visuel_batiment.23e04ccae28c75464c91.jpg",
+    "static/media/me.jpeg": "/portfolio/static/media/me.447881f4aaaf645ef500.jpeg",
+    "static/media/Vertex-AI.jpg": "/portfolio/static/media/Vertex-AI.118ba46c59307af7fa7d.jpg",
+    "static/media/ecc.png": "/portfolio/static/media/ecc.00e7ef20460edbf4d689.png",
+    "static/media/qiskit.png": "/portfolio/static/media/qiskit.df06ab001a906de27e84.png",
+    "static/media/malware_detection.jpg": "/portfolio/static/media/malware_detection.4bc00b485cd230131ddc.jpg",
+    "static/media/r3mob.png": "/portfolio/static/media/r3mob.e9e3ddb2431733b75a55.png",
+    "static/media/LABRI_BIG_0.png": "/portfolio/static/media/LABRI_BIG_0.cc27fc847828898b7ff2.png",
+    "static/media/carpooling.jpg": "/portfolio/static/media/carpooling.c7242a0a7f640041e0ce.jpg",
+    "index.html": "/portfolio/index.html",
+    "main.c5c98b5f.css.map": "/portfolio/static/css/main.c5c98b5f.css.map",
+    "main.fc585a1d.js.map": "/portfolio/static/js/main.fc585a1d.js.map",
+    "453.515ecba2.chunk.js.map": "/portfolio/static/js/453.515ecba2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c5c98b5f.css",
+    "static/js/main.fc585a1d.js"
+  ]
+}
