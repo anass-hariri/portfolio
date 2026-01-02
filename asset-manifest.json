@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.e07f0860.css",
+    "main.js": "/portfolio/static/js/main.7038ce7c.js",
+    "static/js/453.515ecba2.chunk.js": "/portfolio/static/js/453.515ecba2.chunk.js",
+    "static/media/cv_anasshariri.pdf": "/portfolio/static/media/cv_anasshariri.4e1fbf3ef034314c172a.pdf",
+    "static/media/santa.png": "/portfolio/static/media/santa.29d733b6c14445c00479.png",
+    "static/media/ppmoj.png": "/portfolio/static/media/ppmoj.642023f900cfb298148b.png",
+    "static/media/orange.jpeg": "/portfolio/static/media/orange.d589ccb8512105d55054.jpeg",
+    "static/media/hyblab.webp": "/portfolio/static/media/hyblab.f0273db3c2fd86995239.webp",
+    "static/media/gitlab_logo.png": "/portfolio/static/media/gitlab_logo.9cdb0990071fc89e943f.png",
+    "static/media/polytech_photo.webp": "/portfolio/static/media/polytech_photo.4291ad1f3b968d826ddc.webp",
+    "static/media/liegeuniv.png": "/portfolio/static/media/liegeuniv.d9a8a5ea27546d0b3bb0.png",
+    "static/media/docker.jpg": "/portfolio/static/media/docker.849631d15bf6cebcce28.jpg",
+    "static/media/profil.jpeg": "/portfolio/static/media/profil.4a76a2364ef9177dec67.jpeg",
+    "static/media/cesium.png": "/portfolio/static/media/cesium.4c10c4b95397736458a7.png",
+    "static/media/school.jpg": "/portfolio/static/media/school.53aebb8c0917808dc8e0.jpg",
+    "static/media/Dijkstra.png": "/portfolio/static/media/Dijkstra.c340fab05df44fd8f0b7.png",
+    "static/media/chu.jpg": "/portfolio/static/media/chu.7ccbe3274f31e2986166.jpg",
+    "static/media/sonarlint.png": "/portfolio/static/media/sonarlint.18efb6f3719b454fd16e.png",
+    "index.html": "/portfolio/index.html",
+    "main.e07f0860.css.map": "/portfolio/static/css/main.e07f0860.css.map",
+    "main.7038ce7c.js.map": "/portfolio/static/js/main.7038ce7c.js.map",
+    "453.515ecba2.chunk.js.map": "/portfolio/static/js/453.515ecba2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e07f0860.css",
+    "static/js/main.7038ce7c.js"
+  ]
+}
