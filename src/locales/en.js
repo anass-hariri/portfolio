@@ -12,12 +12,15 @@ const en = {
     name: "Anass Hariri",
     speciality: "Software Engineer | Full-Stack Web Developer | Development & Testing | DevOps",
     download: "Download CV",
-    contact: "Contact"
+    contact: "Contact",
+    Phone: "Phone: "
   },
 
     about: {
     title: "About Me",
     contact: "Contact Me",
+    contact_2: "Contact",
+    Phone: "Téléphone: ",
     blocks: {
       intro: {
         t1: "Software engineer graduated from ",

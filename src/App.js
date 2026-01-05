@@ -9,7 +9,8 @@ import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import ProgrammingSkills from "./components/Skills";
 import FormationSection from "./components/FormationSection";
-import Certificates from "./components/Certificates";
+import Contact from './components/contact';
+
 function App() {
   return (
     <LanguageProvider>
@@ -28,7 +29,7 @@ function App() {
             <FormationSection/>
           </motion.div>
 
-          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.9 }}>
+          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.6 }}>
             <Experience/>
           </motion.div>
 
@@ -38,6 +39,10 @@ function App() {
 
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 1.0 }}>
             <ProgrammingSkills/>
+          </motion.div>
+
+          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 1.2 }}>
+            <Contact/>
           </motion.div>
         </AnimatePresence>
       </div>

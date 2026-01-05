@@ -8,19 +8,17 @@ import en from '../locales/en';
 import polytech_logo from "../assets/polytech_logo.jpg";
 import residence_logo from "../assets/residence_logo.jpg";
 
-// Bannières / photos (ajoute tes propres images dans `assets`)
-import polytech_photo from "../assets/polytech_photo.webp"; // 1280×720 idéalement
+// Bannières / photos
+import polytech_photo from "../assets/polytech_photo.webp";
 import residence_photo from "../assets/residence.jpg";
-
-
 
 const FormationSection = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, threshold: 0.1 });
 
   const {language} = useLanguage()
-
   const translations = language === 'fr' ? fr.formation : en.formation;
+
   const formations = [
     {
       id: 1,
@@ -42,8 +40,6 @@ const FormationSection = () => {
     },
   ];
 
-
-  /* ───── Variantes d'animation ───── */
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -83,17 +79,17 @@ const FormationSection = () => {
       >
         {/* En‑tête */}
         <motion.div variants={itemVariants} className="mb-16 text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold text-black dark:text-white mb-2">
+          <h2 className="text-3xl sm:text-4xl font-bold text-black dark:text-white mb-2 inline-block">
             {translations.intro}
           </h2>
-          <div className="mx-auto w-24 h-1 bg-indigo-400 rounded-full" />
+          <div className="mx-auto w-24 h-1 bg-blue-600 rounded-full" />
         </motion.div>
 
         {/* Timeline */}
         <div className="relative">
           <motion.div
             variants={timelineVariants}
-            className="absolute left-6 top-0 h-full w-1 bg-indigo-400/40 dark:bg-indigo-400 origin-top rounded-full"
+            className="absolute left-6 top-0 h-full w-1 bg-blue-700/40 dark:bg-blue-700 origin-top rounded-full"
           />
 
           <div className="space-y-12">
@@ -105,13 +101,13 @@ const FormationSection = () => {
               >
                 {/* Point */}
                 <div className="absolute left-0 top-12 transform -translate-x-1/2">
-                  <div className="w-6 h-6 rounded-full bg-indigo-700 border-4 border-indigo-400 flex items-center justify-center">
+                  <div className="w-6 h-6 rounded-full bg-blue-800 border-4 border-blue-700 flex items-center justify-center">
                     <div className="w-2 h-2 rounded-full bg-[#EFF6E0]" />
                   </div>
                 </div>
 
                 {/* Carte */}
-                <div className="bg-white dark:bg-gray-800/80 backdrop-blur-md border border-indigo-400 rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+                <div className="bg-white dark:bg-gray-800/80 backdrop-blur-md border border-blue-700 rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-shadow duration-300">
                   {/* Bannière */}
                   <div className="relative w-full h-48 sm:h-56 lg:h-64 overflow-hidden">
                     <img
@@ -119,14 +115,13 @@ const FormationSection = () => {
                       alt={` ${formation.institution}`}
                       className="object-cover w-full h-full"
                     />
-                    {/* Filtre gradient pour lisser la transition avec la carte */}
                     <div className="absolute inset-0 bg-gradient-to-b from-black/0 via-black/10 to-black/30 dark:from-gray-900/0 dark:via-gray-900/20 dark:to-gray-900/40" />
                   </div>
 
                   {/* Contenu */}
                   <div className="p-6 flex flex-col sm:flex-row gap-6">
                     {/* Logo */}
-                    <div className="flex-shrink-0 -mt-12 sm:mt-0 sm:relative">
+                    <div className="flex-shrink-0 mt-0 sm:-mt-12 sm:relative">
                       <img
                         src={formation.logo}
                         alt={`Logo ${formation.institution}`}
@@ -138,16 +133,16 @@ const FormationSection = () => {
                       <h3 className="text-xl font-bold text-black dark:text-white">
                         {formation.institution}
                       </h3>
-                      <p className="text-indigo-600 dark:text-indigo-400 font-medium">
+                      <p className="text-blue-800 dark:text-blue-600 font-medium">
                         {formation.diplome}
                       </p>
                       <p className="text-sm text-gray-700 dark:text-gray-300 mt-1">
                         {formation.periode}
                       </p>
                       {formation.competences && (
-                        <div className="mt-4 pt-4 border-t border-indigo-400/50">
+                        <div className="mt-4 pt-4 border-t border-blue-700/50">
                           <p className="text-sm text-gray-600 dark:text-gray-300">
-                            <span className="font-semibold text-indigo-600 dark:text-indigo-400">
+                            <span className="font-semibold text-blue-800 dark:text-blue-600">
                               {translations.skills}:
                             </span>{" "}
                             {formation.competences}

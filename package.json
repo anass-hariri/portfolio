@@ -1,7 +1,7 @@
 {
-  "homepage": "https://mbouhaja02.github.io/portfolio",
+  "homepage": "https://anass-hariri.github.io/portfolio",
   "name": "my-portfoliew",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "@fortawesome/free-brands-svg-icons": "^6.7.0",

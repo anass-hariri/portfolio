@@ -12,7 +12,6 @@ import { useLanguage } from '../contexts/LanguageContext';
 import fr from '../locales/fr';
 import en from '../locales/en';
 
-
 // Variantes Framer Motion
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -29,7 +28,6 @@ export default function Projects() {
   const isInView = useInView(ref, { once: true, threshold: 0.1 });
 
   const {language} = useLanguage()
-
   const translations = language === 'fr' ? fr.projects : en.projects;
 
   const allProjects = [
@@ -78,12 +76,12 @@ export default function Projects() {
   ];
 
   const ProjectCard = ({ project }) => {
-    const [isActive, setIsActive] = useState(false); // Overlay indépendant
+    const [isActive, setIsActive] = useState(false);
 
     return (
       <motion.div
         variants={projectCardVariants}
-        className="relative w-full h-96 rounded-3xl overflow-hidden cursor-pointer group shadow-xl border border-indigo-200 dark:border-indigo-700 bg-white/90 dark:bg-gray-900/80 backdrop-blur-lg"
+        className="relative w-full h-96 rounded-3xl overflow-hidden cursor-pointer group shadow-xl border border-blue-300 dark:border-blue-700 bg-white/90 dark:bg-gray-900/80 backdrop-blur-lg"
         onClick={() => setIsActive(!isActive)}
         onMouseEnter={() => setIsActive(true)}
         onMouseLeave={() => setIsActive(false)}
@@ -94,7 +92,7 @@ export default function Projects() {
           alt={project.title}
           className="absolute inset-0 w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-105"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/20 to-black/60 group-hover:from-indigo-900/40 transition-colors duration-500" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/20 to-black/60 group-hover:from-blue-900/40 transition-colors duration-500" />
 
         {/* Title & date */}
         <div className="absolute bottom-6 left-6 right-6 z-10">
@@ -107,12 +105,12 @@ export default function Projects() {
           initial={{ opacity: 0, y: 10 }}
           animate={isActive ? { opacity: 1, y: 0 } : { opacity: 0, y: 10 }}
           transition={{ duration: 0.2 }}
-          className="absolute inset-0 p-6 flex flex-col justify-center text-sm text-gray-200 backdrop-blur-sm bg-black/60 pointer-events-none"
+          className="absolute inset-0 p-6 flex flex-col justify-center text-sm text-gray-200 backdrop-blur-sm bg-black/60 pointer-events-auto sm:pointer-events-none"
         >
           <p className="mb-3 max-h-40 overflow-y-auto whitespace-pre-line scrollbar-hide text-left">{project.description}</p>
           <div className="flex items-center justify-center flex-wrap gap-2">
             {project.skills.map((skill, i) => (
-              <span key={i} className="text-[0.65rem] font-medium px-2 py-0.5 bg-indigo-300/30 text-indigo-100 rounded-full">
+              <span key={i} className="text-[0.65rem] font-medium px-2 py-0.5 bg-blue-300/30 text-blue-100 rounded-full">
                 {skill}
               </span>
             ))}
@@ -123,17 +121,17 @@ export default function Projects() {
   };
 
   return (
-    <section id="projects" ref={ref} className="w-full py-20 px-4 sm:px-8 lg:px-16 bg-white dark:bg-[#01161E]">
+    <section id="projects" ref={ref} className="w-full py-20 px-4 sm:px-8 lg:px-16 bg-white text-gray-800 dark:bg-[#01161E] dark:text-[#AEC3B0]">
       <motion.div initial="hidden" animate={isInView ? 'visible' : 'hidden'} variants={containerVariants} className="max-w-7xl mx-auto">
         {/* Section Header */}
         <motion.div variants={projectCardVariants} className="mb-12 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold text-black dark:text-white mb-2 inline-block">
             {translations.intro}
           </h2>
-          <div className="mx-auto w-24 h-1 bg-indigo-500 rounded-full" />
+          <div className="mx-auto w-24 h-1 bg-blue-600 rounded-full" />
         </motion.div>
 
-        {/* Grid Projects 1/2 */}
+        {/* Grid Projects */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
           {allProjects.map((project, idx) => (
             <ProjectCard project={project} key={idx} />

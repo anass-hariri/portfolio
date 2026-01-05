@@ -12,12 +12,15 @@ const fr = {
     name: "Anass Hariri",
     speciality: "Ingénieur logiciel | Développeur Web Full-Stack | Développement et tests | DevOps",
     download: "Télécharger le CV",
-    contact: "Contact"
+    contact: "Contact",
+    Phone: "Téléphone: "
   },
 
   about: {
     title: "À propos de moi",
     contact: "Me contacter",
+    contact_2: "Contact",
+    Phone: "Téléphone: ",
     blocks: {
       intro: {
         t1: "Ingénieur logiciel diplômé de ",

@@ -28,15 +28,11 @@ import { useLanguage } from '../contexts/LanguageContext';
 import fr from '../locales/fr';
 import en from '../locales/en';
 
-
 /* --------------------------------------------------
   SkillBar – single skill with animated progress bar
 -------------------------------------------------- */
 const SkillBar = ({ skill, percentage, icon, variants }) => {
-
-
-  const {language} = useLanguage()
-
+  const {language} = useLanguage();
   const translations = language === 'fr' ? fr.skills : en.skills;
   const getLevel = (pct) =>
     pct >= 80 ? translations.Advanced : pct >= 50 ? translations.Intermediate : translations.Beginner;
@@ -45,7 +41,7 @@ const SkillBar = ({ skill, percentage, icon, variants }) => {
     <motion.div variants={variants} className="w-full p-2">
       <div className="bg-white dark:bg-gray-800/70 rounded-2xl p-4 shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100 dark:border-gray-700 h-full">
         <div className="flex items-center gap-3 mb-3">
-          <div className="text-indigo-500 dark:text-indigo-400 text-xl">
+          <div className="text-blue-600 dark:text-blue-400 text-xl">
             <FontAwesomeIcon icon={icon} />
           </div>
           <h4 className="font-semibold text-gray-800 dark:text-white text-base">
@@ -58,13 +54,13 @@ const SkillBar = ({ skill, percentage, icon, variants }) => {
             initial={{ width: 0 }}
             animate={{ width: `${percentage}%` }}
             transition={{ duration: 1.3, delay: 0.2, type: 'spring' }}
-            className="h-2 rounded-full bg-gradient-to-r from-indigo-400 to-indigo-600"
+            className="h-2 rounded-full bg-gradient-to-r from-blue-400 to-blue-600"
           />
         </div>
 
         <div className="flex justify-between text-xs font-medium">
           <span className="text-gray-500 dark:text-gray-400">{getLevel(percentage)}</span>
-          <span className="text-indigo-600 dark:text-indigo-400">{percentage}%</span>
+          <span className="text-blue-600 dark:text-blue-400">{percentage}%</span>
         </div>
       </div>
     </motion.div>
@@ -80,11 +76,11 @@ const categories = [
     skills: [
       { skill: 'Python', percentage: 90, icon: faPython },
       { skill: 'Java', percentage: 60, icon: faJava },
-      { skill: 'C++', percentage: 60, icon: faProjectDiagram },
-      { skill: 'C', percentage: 60, icon: faProjectDiagram },
+      { skill: 'C++', percentage: 50, icon: faProjectDiagram },
+      { skill: 'C', percentage: 50, icon: faProjectDiagram },
       { skill: 'JavaScript', percentage: 80, icon: faJs },
       { skill: 'TypeScript', percentage: 80, icon: faJs },
-      { skill: 'PHP', percentage: 60, icon: faPhp },
+      { skill: 'PHP', percentage: 50, icon: faPhp },
       { skill: 'HTML5', percentage: 85, icon: faHtml5 },
       { skill: 'CSS3', percentage: 80, icon: faCss3Alt }
     ]
@@ -96,10 +92,10 @@ const categories = [
       { skill: 'Node.js', percentage: 80, icon: faNodeJs },
       { skill: 'React.js', percentage: 75, icon: faReact },
       { skill: 'Angular', percentage: 80, icon: faAngular },
-      { skill: 'Cesium.js', percentage: 75, icon: faGlobe },
+      { skill: 'Cesium.js', percentage: 60, icon: faGlobe },
       { skill: 'FastAPI', percentage: 75, icon: faPython },
-      { skill: 'Flask', percentage: 80, icon: faPython },
-      { skill: 'Bootstrap', percentage: 75, icon: faBootstrap }
+      { skill: 'Flask', percentage: 70, icon: faPython },
+      { skill: 'Bootstrap', percentage: 65, icon: faBootstrap }
     ]
   },
   {
@@ -113,35 +109,35 @@ const categories = [
   {
     name: 'Tests & CI/CD',
     skills: [
-      { skill: 'Playwright', percentage: 80, icon: faProjectDiagram },
-      { skill: 'Cypress', percentage: 60, icon: faProjectDiagram },
-      { skill: 'SonarLint', percentage: 65, icon: faProjectDiagram },
-      { skill: 'GitLab CI/CD', percentage: 70, icon: faCogs }
+      { skill: 'Playwright', percentage: 70, icon: faProjectDiagram },
+      { skill: 'Cypress', percentage: 40, icon: faProjectDiagram },
+      { skill: 'SonarLint', percentage: 50, icon: faProjectDiagram },
+      { skill: 'GitLab CI/CD', percentage: 55, icon: faCogs }
     ]
   },
   {
     name: 'Tools',
     skills: [
-      { skill: 'Docker', percentage: 70, icon: faDocker },
-      { skill: 'Git', percentage: 85, icon: faGitAlt },
-      { skill: 'Jira', percentage: 80, icon: faProjectDiagram }
+      { skill: 'Docker', percentage: 60, icon: faDocker },
+      { skill: 'Git', percentage: 70, icon: faGitAlt },
+      { skill: 'Jira', percentage: 70, icon: faProjectDiagram }
     ]
   },
   {
     name: 'AI / Machine Learning',
     skills: [
-      { skill: 'Reinforcement Learning', percentage: 70, icon: faBrain },
-      { skill: 'YOLO', percentage: 75, icon: faBrain },
-      { skill: 'SAM', percentage: 70, icon: faBrain },
+      { skill: 'Reinforcement Learning', percentage: 50, icon: faBrain },
+      { skill: 'YOLO', percentage: 55, icon: faBrain },
+      { skill: 'SAM', percentage: 50, icon: faBrain },
       { skill: 'PyTorch', percentage: 50, icon: faBrain },
-      { skill: 'NumPy', percentage: 80, icon: faChartBar },
-      { skill: 'Pandas', percentage: 80, icon: faChartBar }
+      { skill: 'NumPy', percentage: 70, icon: faChartBar },
+      { skill: 'Pandas', percentage: 60, icon: faChartBar }
     ]
   },
   {
     name: 'Methodologies',
     skills: [
-      { skill: 'Scrum', percentage: 80, icon: faProjectDiagram }
+      { skill: 'Scrum', percentage: 75, icon: faProjectDiagram }
     ]
   }
 ];
@@ -152,8 +148,7 @@ const categories = [
 const ProgrammingSkills = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, threshold: 0.1 });
-  const {language} = useLanguage()
-
+  const {language} = useLanguage();
   const translations = language === 'fr' ? fr.skills : en.skills;
 
   const containerVariants = {
@@ -176,7 +171,7 @@ const ProgrammingSkills = () => {
   return (
     <section
       id="skills"
-      className="w-full py-20 px-4 sm:px-8 lg:px-16 bg-white dark:bg-[#01161E]"
+      className="w-full py-20 px-4 sm:px-8 lg:px-16 bg-white text-gray-800 dark:bg-[#01161E] dark:text-[#AEC3B0]"
       ref={ref}
     >
       <motion.div
@@ -188,7 +183,7 @@ const ProgrammingSkills = () => {
         {/* Header */}
         <motion.div variants={itemVariants} className="mb-14">
           <h2 className="text-3xl sm:text-4xl font-bold text-black dark:text-white mb-2 inline-block">{translations.intro}</h2>
-          <div className="mx-auto w-24 h-1 bg-indigo-500 rounded-full" />
+          <div className="mx-auto w-24 h-1 bg-blue-600 rounded-full" />
           <p className="mt-4 text-gray-600 dark:text-gray-300 max-w-2xl text-left">
             {translations.Paragraph}
           </p>
@@ -205,7 +200,7 @@ const ProgrammingSkills = () => {
               variants={itemVariants}
               className="bg-gray-50 dark:bg-gray-800/60 rounded-3xl p-6 shadow border border-gray-100 dark:border-gray-700 flex flex-col"
             >
-              <h3 className="text-xl font-semibold text-indigo-600 dark:text-indigo-400 mb-4 text-center">
+              <h3 className="text-xl font-semibold text-blue-600 dark:text-blue-400 mb-4 text-center">
                 {category.name}
               </h3>
 
