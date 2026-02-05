@@ -11,7 +11,7 @@ import FastAPI from '../assets/FastAPI.png';
 import docker from '../assets/docker.jpg';
 import sonarlint from '../assets/sonarlint.png'
 import Cesium from '../assets/cesium.png';
-import Flask from '../assets/flask.png';
+import Spring_Boot from '../assets/Spring Boot.png';
 import PostgreSQL from '../assets/postgresql.png'
 import { useLanguage } from '../contexts/LanguageContext';
 import fr from '../locales/fr';
@@ -78,7 +78,7 @@ const Experience = () => {
       imageUrl: [liege],
       summary: translations.experience_2.summary,
       tasks: translations.experience_2.tasks,
-      techImages: [Cesium, Flask, PostgreSQL],
+      techImages: [Cesium, Spring_Boot, PostgreSQL],
       skills: translations.experience_2.skills
     },
   ];

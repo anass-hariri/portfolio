@@ -92,6 +92,7 @@ const categories = [
       { skill: 'Node.js', percentage: 80, icon: faNodeJs },
       { skill: 'React.js', percentage: 75, icon: faReact },
       { skill: 'Angular', percentage: 80, icon: faAngular },
+      { skill: 'Spring Boot', percentage: 70, icon: faJava },
       { skill: 'Cesium.js', percentage: 60, icon: faGlobe },
       { skill: 'FastAPI', percentage: 75, icon: faPython },
       { skill: 'Flask', percentage: 70, icon: faPython },

@@ -101,11 +101,11 @@ const fr = {
       company: "GeoScITY – Université de Liège · Stage · Liège · Belgique",
       summary: "Conception et développement d’un démonstrateur 3D interactif pour la visualisation de données urbaines. Les principales tâches comprenaient :",
       tasks: [
-        "Développement de l’interface 3D des villes avec Cesium.js (frontend) et Flask – Python (backend).",
+        "Développement de l’interface 3D des villes avec Cesium.js (frontend) et Spring Boot – Java (backend).",
         "Intégration et automatisation du chargement des données CityGML (ville de Namur) dans 3DCityDB avec PostgreSQL sans nécessiter de modification du code existant."
       ],
       skills: [
-        "Cesium.js", "Flask – Python", "PostgreSQL"
+        "Cesium.js", "Spring Boot – Java", "PostgreSQL"
       ]
     }
   },
